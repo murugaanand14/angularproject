@@ -1,0 +1,31 @@
+<app-emp-dashboard></app-emp-dashboard>
+<!-- <ng-sidebar #sidebar>
+    <a closeSidebar>Closes the sidebar</a>
+    <button (click)="sidebar.close()">Close sidebar</button>
+    <button (click)="sidebar.open()">Open sidebar</button>
+  </ng-sidebar> -->
+  <div class="sidebar-opener" (click)="sidebarShow = !sidebarShow">
+	  Click me to open/close the sidebar
+</div>
+
+<div class="sidebar-slider" [class.sidebar-slide-in]="sidebarShow">
+    <div
+        class="sidebar-close"
+        (click)="sidebarShow = !sidebarShow"
+    >
+        X
+    </div>
+	  <div class="sidebar-content">
+        
+        <div>Home Page</div>
+        <div>Employee Datils</div>
+        <div>Employee Bank info</div>
+        <div>Employee Leaves</div>
+        <div>Payclip</div>
+        <div>About Us</div>
+        <div>Contact Us</div>
+	  </div>
+</div>
+
+  
+  
